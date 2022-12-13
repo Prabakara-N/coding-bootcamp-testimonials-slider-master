@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-Dark-Blue: hsl(240, 38%, 20%);
+  --clr-Grayish-Blue: hsl(240, 18%, 77%);
+  --box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25),
+    -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-image: url(../images/pattern-curve.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* person 1 */
+.container {
+  width: 94%;
+  margin: auto;
+}
+
+.img {
+  width: 260px;
+  height: 250px;
+}
+
+.person-image {
+  padding: 2.5rem;
+  background-image: url(../images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 350px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.arrow-container {
+  width: 20%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 20px;
+  position: relative;
+  bottom: 6.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.arrow-img {
+  width: 12px;
+  height: 14px;
+}
+
+.arrow-img:hover {
+  transform: scale(1.25);
+  transition: all 0.3s;
+}
+
+.person-details {
+  padding: 1.5rem;
+  margin-top: -3.5rem;
+  text-align: center;
+  background-image: url(../images/pattern-quotes.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.para {
+  color: var(--clr-Dark-Blue);
+  line-height: 23px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.author-name {
+  color: var(--clr-Dark-Blue);
+  font-weight: bold;
+}
+
+.job {
+  color: var(--clr-Grayish-Blue);
+  margin-top: -8px;
+}
+
+.hidden {
+  display: none;
+}
