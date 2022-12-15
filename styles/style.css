@@ -25,10 +25,6 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  background-image: url(../images/pattern-curve.svg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,6 +36,11 @@ body {
 .container {
   width: 94%;
   margin: auto;
+  background-image: url(../images/pattern-curve.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 1050px 150px;
+  transition: all 0.3s;
 }
 
 .img {
@@ -112,6 +113,56 @@ body {
   margin-top: -8px;
 }
 
-.hidden {
+section.hidden {
   display: none;
+}
+
+/* media queory */
+
+@media screen and (min-width: 768px) {
+  body {
+    min-height: 0;
+  }
+
+  .img {
+    width: 425px;
+    height: 400px;
+  }
+
+  .container {
+    width: 70%;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .person-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/pattern-quotes.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 70px;
+  }
+
+  .para {
+    font-size: 1.5rem;
+    line-height: 30px;
+    position: relative;
+    left: 7.25rem;
+  }
+
+  .author-details {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-top: 1rem;
+    margin-left: 8rem;
+  }
+
+  .job {
+    padding-top: 9px;
+  }
 }
