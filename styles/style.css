@@ -136,6 +136,11 @@ section.hidden {
     flex-direction: row-reverse;
   }
 
+  .person-image {
+    background-image: url(../images/pattern-bg.svg);
+    background-size: 510px;
+  }
+
   .person-details {
     display: flex;
     flex-direction: column;
